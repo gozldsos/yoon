@@ -38,6 +38,13 @@ public class HanHomeController {
 
 	ModelAndView mav;
 
+	
+	@RequestMapping(value = "/login", method = RequestMethod.GET)
+	public String login(Model model) {
+		System.out.println("로그인 폼이라구!");
+
+		return "loginJoinFrm/loginFrm";
+	}
 	@ResponseBody
 	@RequestMapping(value = "/checkid", method = RequestMethod.POST)
 	public int checkId(String m_id) {
