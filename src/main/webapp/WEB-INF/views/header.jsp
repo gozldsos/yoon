@@ -287,7 +287,7 @@ $(document).ready(function(){
 				+ "            <i class='mdi mdi-logout text-primary'></i>\n"
 				+ "            로그아웃\n" + "        </a>\n" + "    </div>\n"
 				+ "</li>\n";
-
+		console.log("${mb.m_id}");
 		$('#headerKind').html(strKind);
 	}
 </script>
